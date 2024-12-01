@@ -39,6 +39,7 @@ const NAI = () => {
     }
   };
 
+  document.title="Multi Store | Admin-Uploads"
   return (
     <div className="admin-upload">
       <h2>Upload Product</h2>

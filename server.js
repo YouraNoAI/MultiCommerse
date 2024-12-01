@@ -15,10 +15,10 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(express.json());
-app.use('/uploads', express.static(path.join(__dirname, 'uploads'))); // Serve uploaded files
+app.use('/assets', express.static(path.join(__dirname, 'assets'))); // Serve uploaded files
 
 // Pastikan direktori uploads ada
-const uploadsDir = path.join(__dirname, 'uploads');
+const uploadsDir = path.join(__dirname, 'assets');
 if (!fs.existsSync(uploadsDir)) {
   fs.mkdirSync(uploadsDir, { recursive: true });
 }
