@@ -7,7 +7,8 @@ import "../css/style.css";
 
 // import Page
 import Index from "../Pages/index";
-import Blanks from "../Pages/blank";
+import Blanks from "../Pages/blank"
+import Product from "../Pages/Components/product";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -15,6 +16,7 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/*" element={<Blanks />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </Router>
   </StrictMode>
